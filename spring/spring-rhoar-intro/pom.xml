@@ -69,6 +69,10 @@
       </dependency>
 
 <!-- TODO: ADD Actuator dependency here -->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
 
     <!-- Testing -->
     <dependency>
@@ -139,6 +143,11 @@
       <id>openshift</id>
       <dependencies>
 <!-- TODO: ADD PostgreSQL database dependency here -->
+          <dependency>
+              <groupId>org.postgresql</groupId>
+              <artifactId>postgresql</artifactId>
+              <scope>runtime</scope>
+          </dependency>
       </dependencies>
       <build>
         <plugins>
